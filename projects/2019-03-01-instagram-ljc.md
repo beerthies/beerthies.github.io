@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Tweets Trump"
+date: 2019-03-01
+---
+
 # What patterns are there behind the Instagram behaviour of Learn Java Coding?
 For this research, I used 2 datasets. The first one was downloaded by Learn Java Coding himself from Instagram. If you want to do that too, click [here](https://www.cnet.com/how-to/how-to-download-all-your-instagram-data/). That data set contained several json files. I used comments.json and likes.json. The second data set was obtained by [scraping](https://realpython.com/python-web-scraping-practical-introduction/) information from instagram.com/learnjavacoding. 
 Because the main question is relatively broad, I started exploring immediately. Of course, I was interested which accounts were liked the most by my friend. You can see that on the right. As you can see, he likes a lot of his fellow code-Insta-users. Also, he seems to be into hiphop, since he likes 50cent and spec.nl (a Dutch management agency for artists). <br/>
