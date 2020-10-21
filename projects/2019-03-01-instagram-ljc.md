@@ -1,24 +1,24 @@
 # What patterns are there behind the Instagram behaviour of Learn Java Coding?
 For this research, I used 2 datasets. The first one was downloaded by Learn Java Coding himself from Instagram. If you want to do that too, click [here](https://www.cnet.com/how-to/how-to-download-all-your-instagram-data/). That data set contained several json files. I used comments.json and likes.json. The second data set was obtained by [scraping](https://realpython.com/python-web-scraping-practical-introduction/) information from instagram.com/learnjavacoding. 
-Because the main question is relatively broad, I started exploring immediately. Of course, I was interested which accounts were liked the most by my friend. You can see that on the right. As you can see, he likes a lot of his fellow code-Insta-users. Also, he seems to be into hiphop, since he likes 50cent and spec.nl (a Dutch management agency for artists).
+Because the main question is relatively broad, I started exploring immediately. Of course, I was interested which accounts were liked the most by my friend. You can see that on the right. As you can see, he likes a lot of his fellow code-Insta-users. Also, he seems to be into hiphop, since he likes 50cent and spec.nl (a Dutch management agency for artists). <br/>
 ![Top 10 most liked instagram accounts](images/top10liked.png)
 
-Having taken at look at the likes that he gives, it is also interesting to see *when* he likes the most. In the bar plot on the left, you can see that he is kind of a night owl. Also, there is a peek during lunch break. It is funny to see a drop during dinner time. Apparantly, he does not use Insta then that much.
+Having taken at look at the likes that he gives, it is also interesting to see *when* he likes the most. In the bar plot on the left, you can see that he is kind of a night owl. Also, there is a peek during lunch break. It is funny to see a drop during dinner time. Apparantly, he does not use Insta then that much.<br/>
 ![Activity on insta per hour](images/instaactivityhour.png)
 
-Being busy with time and likes, it was logical to have a look at his activity on Instagram over the years. On the right you can see the last 1.5 years of his usage of Instagram. You can see a peek in the summer of 2018, after which it has been relatively quiet.
+Being busy with time and likes, it was logical to have a look at his activity on Instagram over the years. On the right you can see the last 1.5 years of his usage of Instagram. You can see a peek in the summer of 2018, after which it has been relatively quiet.<br/>
 ![Activity on insta per day](images/instaactivityday.png)
 
 Some KPIs:
--309 likes on one day.
--42 likes per day on average.
--464 active days in the last 1.5 years.
+- 309 likes on one day.
+- 42 likes per day on average.
+- 464 active days in the last 1.5 years.
 
 Up till now, we have looked at the likes that Learn Java Coding has given to other Insta accounts. However, it is also interesting to have a look at his comments. Which accounts get the most of his comments? As you can see on the most right bar plot, those are mainly fellow code-Insta-users.
-It is also interesting to see which accounts are tagged the most by LJC (left graph). The blue bar indicates that he has 1 very close friend who gets tagged 8 times more than the second most tagged account. That is interesting.
+It is also interesting to see which accounts are tagged the most by LJC (left graph). The blue bar indicates that he has 1 very close friend who gets tagged 8 times more than the second most tagged account. That is interesting.<br/>
 ![Tags](images/tags.png) ![Comments](images/comments.png)
 
-Finally, it is interesting to have a look at where every post has been posted. As you know, every Instagram post can have a location attached to it (given by the user). I scraped that data from instagram.com/learnjavacoding and plotted that in a heatmap, which you can see on the right. As you can see, Amsterdam is red. This means that a lot of posts are from there. However, Paris, Monaco and Marseille are all green. This shows that LJC has also been there.
+Finally, it is interesting to have a look at where every post has been posted. As you know, every Instagram post can have a location attached to it (given by the user). I scraped that data from instagram.com/learnjavacoding and plotted that in a heatmap, which you can see on the right. As you can see, Amsterdam is red. This means that a lot of posts are from there. However, Paris, Monaco and Marseille are all green. This shows that LJC has also been there.<br/>
 ![Map](images/map.png)
 
 ## Conclusion
