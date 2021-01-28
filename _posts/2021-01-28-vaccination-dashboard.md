@@ -1,0 +1,6 @@
+---
+layout: post
+title: "Vaccination Dashboard"
+date: 2020-01-28
+---
+For the course project optimization of business processes, we made a dashboard about the logistics behind the COVID-19 vaccination process. The dashboard was made in Dash and should enable policy makers to model different "what if" scenarios. It computes the locations of medical hubs and divides the available nurses and vaccines in an efficient way. You can check it out [here](https://project-obp.herokuapp.com).
