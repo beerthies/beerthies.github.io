@@ -2,6 +2,8 @@
 layout: post
 title: "Instagram Learn Java Coding"
 date: 2019-03-01
+related_image: /images/insta_LJC.png
+
 ---
 
 ## What patterns are there behind the Instagram behaviour of Learn Java Coding?

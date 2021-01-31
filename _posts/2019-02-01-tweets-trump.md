@@ -2,6 +2,7 @@
 layout: post
 title: "Tweets Trump"
 date: 2019-02-01
+related_image: /images/trump_twitter.jpg
 ---
 ## What kind of language and tone does Donald Trump use in his tweets and how does this relate with the world close around him?
 
