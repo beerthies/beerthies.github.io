@@ -46,7 +46,7 @@ If you click [here](https://trumpgolfcount.com/displayoutings), you will be dire
 As you can see below, the president's sentiment has been approximately the same over the years. However, the spread in 2018 is slightly bigger than in the previous years.
 ![Sentiment over the years](/images/sentimentboxplot.png)]
 
-### Conclusion
+## Conclusion
 In the last 2 weeks the president used border & border security the most. In the last 4 years he used trump, great  and president the most. Also, he mostly uses neutral words and sometimes a positive word. There were several factors that I wanted to compare with the president's sentiment. Below you can see which of them has a relation with sentiment and which do not.<br/>
 Relation with sentiment: 
 - Time

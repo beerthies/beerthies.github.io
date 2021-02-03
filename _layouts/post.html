@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-{% if page.related_image %}
-    <img src="{{ page.related_image }}" alt="" class="header_post">
-{% endif %}
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class=post-box>
+  {% if page.related_image %}
+  <img src="{{ page.related_image }}" alt="" class="header_post">
+  {% endif %}
+  <h1>{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
+  <div class="post">
   {{ content }}
+  </div>
 </div>
+

@@ -1,8 +1,164 @@
 ---
 layout: default
-title: Home
+title: Berend Markhorst | Business Analyst
 ---
-<div class="blurb">
+<!-- <div class="blurb">
 	<h1>Hi there, welcome!</h1>
 	<img src="images/walking_bear.gif" alt="Walking bear">
-</div><!-- /.blurb -->
+</div>/.blurb -->
+
+<body>
+	<div id="top"></div>
+	<!-- **** Hero Section **** -->
+	<div id="hero" class="jumbotron">
+		<div class="container">
+		<h1 class="hero-title" class="load-hidden">
+			Hi, my name is <span class="text-color-main">Berend</span>
+			<br />
+			I'm a business analyst.
+		</h1>
+		<p class="hero-cta" class="load-hidden">
+			<a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+		</p>
+		</div>
+	</div>
+	<!-- /END Hero Section -->
+
+	 <!-- **** About Section **** -->
+	 <section id="about">
+		<div class="container">
+		  <h2 class="section-title headertje">
+			About me
+		  </h2>
+		  <div class="row about-wrapper">
+			<div class="col-md-6 col-sm-12">
+			  <div class="about-wrapper__image">
+				<img
+				  class="img-fluid"
+				  height="auto"
+				  width="300px"
+				  src="./images/berend.png"
+				  alt="Profile Image"
+				/>
+			  </div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+			  <div class="about-wrapper__info">
+				<p class="about-wrapper__info-text">
+					🐻 Berend<br/>
+					🏙 Amsterdam<br/>
+					👶 29-07-1998<br/>
+					🎓 St. Ignatius Gymnasium (2010-2016)<br/>
+					⛵ Zeilschool Aalsmeer<br/>
+				</p>
+				<p class="about-wrapper__info-text">
+					🏐 Volleybal<br/>
+					🎓 Business Analytics BSc (2016-2020)<br/>
+					📝 Student voor Student<br/>
+					👨‍💻 Intern Tonos Care<br/>
+					📚 Business Analytics MSc (2020-now)<br/>
+				</p>
+				<span class="d-flex mt-3">
+				  <a target="_blank" class="cta-btn cta-btn--resume" href="/files/cv.pdf" target="_blank">
+					View Resume
+				  </a>
+				</span>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <!-- /END About Section -->
+
+	  <!-- **** Projects Section **** -->
+	  <section id="projects">
+		<div class="container">
+		  <div class="project-wrapper">
+			<h2 class="section-title dark-blue-text">
+			  Projects
+			</h2>
+  
+			<!-- Each .row is a project -->
+			{% for post in site.posts %}
+				<div class="row">
+				<div class="col-lg-4 col-sm-12">
+					<div class="project-wrapper__text">
+					<h3 class="project-wrapper__text-title">{{ post.title }}</h3>
+					<div>
+						<p class="mb-4 text">
+							{{ post.content | strip_html | truncatewords:50}}
+						</p>
+					</div>
+					<a class="cta-btn cta-btn--hero" href="{{ post.url }}">
+						More info
+					</a>
+					</div>
+				</div>
+				<div class="col-lg-8 col-sm-12">
+					<div class="project-wrapper__image">
+					<a href="{{ post.url }}">
+						<div data-tilt class="thumbnail rounded">
+						<img class="img-fluid" src= "{{ post.related_image }}" />
+						</div>
+					</a>
+					</div>
+				</div>
+				</div>
+			{% endfor %}
+
+			<!-- /END Project -->
+  
+		  </div>
+		</div>
+	  </section>
+	  <!-- /END Projects Section -->
+
+		<!-- **** Contact Section **** -->
+		  <section id="contact">
+			<div class="container">
+			  <h2 class="section-title">
+				Contact
+			  </h2>
+			  <div class="contact-wrapper text-center">
+				<p class="contact-wrapper__text">
+				  Do you want to work together?
+				</p>
+				<a
+				  target="_blank"
+				  class="cta-btn cta-btn--resume"
+				  href="mailto:b.t.markhorst@student.vu.nl"
+				  >Contact me!</a>
+			  </div>
+			</div>
+		  </section>
+		  <!-- /END Contact Section -->
+
+	<!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+		<div class="container">
+		  <a href="#top" class="back-to-top">
+			<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+		  </a>
+		  <div class="social-links">
+			<a href="https://www.instagram.com/berendmarkhorst/" target="_blank">
+			  <i class="fa fa-instagram fa-inverse"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/beermarkhorst/" target="_blank">
+			  <i class="fa fa-linkedin fa-inverse"></i>
+			</a>
+			<a href="https://github.com/beerthies" target="_blank">
+			  <i class="fa fa-github fa-inverse"></i>
+			</a>
+		  </div>
+  
+		  <hr />
+  
+		  <!-- If you give me some credit, will be huge for me :) -->
+		  <p class="footer__text">
+			© 2021 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+			</a>
+		  </p>
+		</div>
+	  </footer>
+	  <!-- /END Footer Section -->
+</body>

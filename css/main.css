@@ -1,9 +1,36 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+@import "variables.css";
+@import "helpers.css";
+@import "hero.css";
+@import "typography.css";
+@import "buttons.css";
+@import "about.css";
+@import "mixins.css";
+@import "projects.css";
+@import "contact.css";
+@import "footer.css";
+
+html {
+    font-size: 62.5%;
 }
+
+body {
+    /* margin: 60px auto;
+    width: 70%; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 5rem 0rem;
+  
+    @include respond(phone) {
+      border: none;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -12,14 +39,8 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
+
+/* h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -27,18 +48,18 @@ h1 {
 h2 {
     font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+} */
 
-h3 {
+/* h3 {
     font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+} */
 
 p {
-    font-size: 1.3em;
-    line-height: 1.4em;
+    font-size: var(--default-font-size);
+    /* line-height: 1.4em; */
     color: black;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    /* font-family: 'Helvetica', 'Arial', 'Sans-Serif'; */
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -46,15 +67,15 @@ footer {
 }
 
 ul {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    font-size: 1.3em;
+    /* font-family: 'Helvetica', 'Arial', 'Sans-Serif'; */
+    font-size: var(--default-font-size);
 
 }
 
 ul.posts { 
     margin: 20px auto 40px; 
-    font-size: 1.3em;
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: var(--default-font-size);
+    /* font-family: 'Helvetica', 'Arial', 'Sans-Serif'; */
 
 }
 
@@ -67,4 +88,18 @@ ul.posts li {
     height: 300px;
     object-fit: cover;
     object-position: 50% 0%;
+}
+
+hr {
+    background-color: var(--white-color);
+}
+
+.container-fluid {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.post-box {
+    margin: 60px auto;
+    width: 70%;
 }
